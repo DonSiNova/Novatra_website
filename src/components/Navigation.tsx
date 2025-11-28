@@ -11,6 +11,7 @@ const Navigation = () => {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
+    { name: "Contact", path: "/contact" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -45,12 +46,6 @@ const Navigation = () => {
                 {link.name}
               </Link>
             ))}
-            <Button 
-              size="sm" 
-              className="bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity"
-            >
-              Contact Us
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -78,12 +73,6 @@ const Navigation = () => {
                 {link.name}
               </Link>
             ))}
-            <Button 
-              size="sm" 
-              className="w-full bg-gradient-primary text-primary-foreground hover:opacity-90"
-            >
-              Contact Us
-            </Button>
           </div>
         )}
       </div>

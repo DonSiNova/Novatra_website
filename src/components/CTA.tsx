@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { ArrowRight, Mail } from "lucide-react";
 
 const CTA = () => {
@@ -27,21 +28,25 @@ const CTA = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button 
-              size="lg" 
-              className="bg-gradient-primary text-white hover:opacity-90 group text-lg px-8"
-            >
-              <Mail className="mr-2 w-5 h-5" />
-              Contact Us
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="text-lg px-8"
-            >
-              Schedule a Demo
-            </Button>
+            <Link to="/contact">
+              <Button 
+                size="lg" 
+                className="bg-gradient-primary text-white hover:opacity-90 group text-lg px-8"
+              >
+                <Mail className="mr-2 w-5 h-5" />
+                Contact Us
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="text-lg px-8"
+              >
+                Schedule a Demo
+              </Button>
+            </Link>
           </div>
 
           {/* Contact Info */}
