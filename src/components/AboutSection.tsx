@@ -1,81 +1,71 @@
-import { Factory, Database, Share2, GitBranch, LineChart, Wrench, Microscope, CloudCog, BarChart3, Radio, RotateCcw, Gauge } from "lucide-react";
-
 const AboutSection = () => {
   const capabilities = [
     {
-      icon: Microscope,
+      number: "01",
       title: "AI, ML & Deep Learning",
       description: "Advanced machine learning and deep learning models tailored for industrial applications"
     },
     {
-      icon: GitBranch,
+      number: "02",
       title: "Agentic AI Workflows",
       description: "Autonomous intelligent systems that adapt and optimize in real-time"
     },
     {
-      icon: LineChart,
+      number: "03",
       title: "Sensor Data Analysis",
       description: "Time and frequency domain analysis for comprehensive insights"
     },
     {
-      icon: CloudCog,
+      number: "04",
       title: "Cloud Integration",
       description: "Seamless AWS, Azure, and Google Cloud deployment and management"
     },
     {
-      icon: BarChart3,
+      number: "05",
       title: "Predictive Analytics",
       description: "Forecasting and automation to prevent issues before they occur"
     },
     {
-      icon: Factory,
+      number: "06",
       title: "Smart Manufacturing",
       description: "Industry 4.0 solutions and digital transformation for production excellence"
     },
     {
-      icon: Database,
+      number: "07",
       title: "Industrial Analytics",
       description: "Data-driven insights that drive operational efficiency and performance"
     },
     {
-      icon: Share2,
+      number: "08",
       title: "Edge Computing",
       description: "Real-time data processing at the edge for immediate actionable insights"
     },
     {
-      icon: Wrench,
+      number: "09",
       title: "Industrial Simulation",
       description: "Digital twins and optimization for manufacturing processes"
     },
     {
-      icon: Gauge,
+      number: "10",
       title: "Performance Monitoring",
       description: "Continuous monitoring and optimization of industrial systems"
     },
     {
-      icon: RotateCcw,
+      number: "11",
       title: "Process Automation",
       description: "Intelligent automation solutions for enhanced productivity and reduced costs"
     },
     {
-      icon: Radio,
+      number: "12",
       title: "IoT Integration",
       description: "Connected device ecosystems for comprehensive industrial intelligence"
     }
   ];
 
   return (
-    <section className="py-24 bg-secondary/30 relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle at 2px 2px, hsl(200 100% 60%) 1px, transparent 0)',
-          backgroundSize: '40px 40px'
-        }} />
-      </div>
-
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
+    <section className="py-24 bg-background relative overflow-hidden">
+      <div className="container mx-auto px-4 lg:px-8">
+        <div className="text-center max-w-3xl mx-auto mb-20 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Our Capabilities
           </h2>
@@ -86,31 +76,29 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {capabilities.map((capability, index) => {
-            const Icon = capability.icon;
-            return (
-              <div
-                key={index}
-                className="group p-6 bg-card rounded-lg border border-border hover:shadow-xl transition-all duration-300 animate-fade-in"
-                style={{ animationDelay: `${index * 0.05}s` }}
-              >
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                    <Icon className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-accent transition-colors">
-                      {capability.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground">
-                      {capability.description}
-                    </p>
-                  </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
+          {capabilities.map((capability, index) => (
+            <div
+              key={index}
+              className="group relative bg-card p-8 hover:bg-secondary/50 transition-all duration-300 animate-fade-in"
+              style={{ animationDelay: `${index * 0.03}s` }}
+            >
+              <div className="space-y-3">
+                <div className="text-xs font-mono text-accent tracking-wider">
+                  {capability.number}
                 </div>
+                <h3 className="text-xl font-semibold text-foreground group-hover:text-accent transition-colors">
+                  {capability.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {capability.description}
+                </p>
               </div>
-            );
-          })}
+              
+              {/* Subtle hover accent line */}
+              <div className="absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+            </div>
+          ))}
         </div>
       </div>
     </section>
