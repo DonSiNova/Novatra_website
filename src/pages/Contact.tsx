@@ -142,10 +142,10 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Email</h3>
                     <a 
-                      href="mailto:info@novatratech.com" 
+                      href="mailto:info@novatratech.co.uk" 
                       className="text-muted-foreground hover:text-accent transition-colors"
                     >
-                      info@novatratech.com
+                      info@novatratech.co.uk
                     </a>
                   </div>
                 </div>
@@ -157,10 +157,10 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Phone</h3>
                     <a 
-                      href="tel:+1234567890" 
+                      href="tel:+447707992193" 
                       className="text-muted-foreground hover:text-accent transition-colors"
                     >
-                      +1 (234) 567-890
+                      +44 7707 992193
                     </a>
                   </div>
                 </div>
@@ -172,8 +172,10 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Office</h3>
                     <p className="text-muted-foreground">
-                      Global Headquarters<br />
-                      Available Worldwide
+                      71-75 Shelton Street<br />
+                      Covent Garden<br />
+                      London WC2H 9JQ<br />
+                      United Kingdom
                     </p>
                   </div>
                 </div>
