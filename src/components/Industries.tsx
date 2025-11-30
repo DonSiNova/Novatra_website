@@ -7,14 +7,14 @@ const Industries = () => {
     {
       image: healthcareImg,
       title: "Healthcare",
-      description: "We deliver advanced predictive analytics, real-time quality monitoring, and comprehensive digital compliance solutions that empower healthcare organizations to enhance patient outcomes, optimize operational efficiency, and maintain stringent regulatory standards across all stages of medical device development and deployment.",
-      features: ["Predictive Analytics", "Quality Control", "Regulatory Compliance"]
+      description: "We deliver advanced predictive analytics, real-time quality monitoring, and comprehensive digital compliance solutions that empower healthcare organizations to enhance patient outcomes, optimize operational efficiency, and maintain stringent regulatory standards. Employing ML, DL, and AI integration for medical devices and pharmaceutical applications across all stages of development and deployment.",
+      features: ["ML & DL Integration", "Medical Devices", "Pharmaceutical AI"]
     },
     {
       image: automotiveImg,
       title: "Automotive",
       description: "Our smart manufacturing solutions integrate sensor-driven optimization, artificial intelligence, and advanced analytics to transform automotive production lines, enabling manufacturers to achieve unprecedented levels of quality control, process efficiency, and real-time decision-making throughout the entire vehicle lifecycle from design to delivery.",
-      features: ["Smart Manufacturing", "Process Optimization", "AI Integration"]
+      features: ["Smart Manufacturing", "Process Optimization", "Cybersecurity"]
     },
     {
       image: energyImg,
