@@ -65,8 +65,11 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-background relative overflow-hidden">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section className="py-24 bg-secondary/20 relative overflow-hidden">
+      {/* Subtle background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-accent/5 to-transparent" />
+      
+      <div className="container mx-auto px-4 lg:px-8 relative">
         <div className="text-center max-w-3xl mx-auto mb-20 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Our Capabilities
@@ -78,29 +81,35 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {capabilities.map((capability, index) => {
             const Icon = capability.icon;
             return (
               <div
                 key={index}
-                className="group relative bg-card p-8 hover:bg-secondary/50 transition-all duration-300 animate-fade-in"
-                style={{ animationDelay: `${index * 0.03}s` }}
+                className="group relative bg-card rounded-xl p-8 border border-border/50 hover:border-accent/50 shadow-sm hover:shadow-xl transition-all duration-500 animate-fade-in overflow-hidden"
+                style={{ animationDelay: `${index * 0.05}s` }}
               >
-                <div className="space-y-3">
-                  <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-accent/10 text-accent group-hover:bg-accent group-hover:text-accent-foreground transition-all duration-300">
-                    <Icon className="w-5 h-5" />
+                {/* Gradient overlay on hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/0 to-accent/0 group-hover:from-accent/5 group-hover:via-accent/3 group-hover:to-transparent transition-all duration-500" />
+                
+                <div className="relative space-y-4">
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-accent/20 to-accent/5 text-accent group-hover:from-accent group-hover:to-accent/80 group-hover:text-white group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+                    <Icon className="w-7 h-7" strokeWidth={1.5} />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground group-hover:text-accent transition-colors">
-                    {capability.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {capability.description}
-                  </p>
+                  
+                  <div className="space-y-2">
+                    <h3 className="text-xl font-semibold text-foreground group-hover:text-accent transition-colors duration-300">
+                      {capability.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {capability.description}
+                    </p>
+                  </div>
                 </div>
                 
-                {/* Subtle hover accent line */}
-                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                {/* Bottom accent line */}
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
             );
           })}
