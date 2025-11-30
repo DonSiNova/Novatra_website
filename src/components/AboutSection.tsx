@@ -1,29 +1,29 @@
-import { Factory, Database, Network, Bot, Activity, Settings, Brain, Cloud, TrendingUp, Cpu, Zap, Gauge } from "lucide-react";
+import { Factory, Database, Share2, GitBranch, LineChart, Wrench, Microscope, CloudCog, BarChart3, Radio, RotateCcw, Gauge } from "lucide-react";
 
 const AboutSection = () => {
   const capabilities = [
     {
-      icon: Brain,
+      icon: Microscope,
       title: "AI, ML & Deep Learning",
       description: "Advanced machine learning and deep learning models tailored for industrial applications"
     },
     {
-      icon: Bot,
+      icon: GitBranch,
       title: "Agentic AI Workflows",
       description: "Autonomous intelligent systems that adapt and optimize in real-time"
     },
     {
-      icon: Activity,
+      icon: LineChart,
       title: "Sensor Data Analysis",
       description: "Time and frequency domain analysis for comprehensive insights"
     },
     {
-      icon: Cloud,
+      icon: CloudCog,
       title: "Cloud Integration",
       description: "Seamless AWS, Azure, and Google Cloud deployment and management"
     },
     {
-      icon: TrendingUp,
+      icon: BarChart3,
       title: "Predictive Analytics",
       description: "Forecasting and automation to prevent issues before they occur"
     },
@@ -38,12 +38,12 @@ const AboutSection = () => {
       description: "Data-driven insights that drive operational efficiency and performance"
     },
     {
-      icon: Network,
+      icon: Share2,
       title: "Edge Computing",
       description: "Real-time data processing at the edge for immediate actionable insights"
     },
     {
-      icon: Settings,
+      icon: Wrench,
       title: "Industrial Simulation",
       description: "Digital twins and optimization for manufacturing processes"
     },
@@ -53,12 +53,12 @@ const AboutSection = () => {
       description: "Continuous monitoring and optimization of industrial systems"
     },
     {
-      icon: Zap,
+      icon: RotateCcw,
       title: "Process Automation",
       description: "Intelligent automation solutions for enhanced productivity and reduced costs"
     },
     {
-      icon: Cpu,
+      icon: Radio,
       title: "IoT Integration",
       description: "Connected device ecosystems for comprehensive industrial intelligence"
     }
