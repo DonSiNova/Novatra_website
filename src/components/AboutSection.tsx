@@ -50,7 +50,7 @@ const AboutSection = () => {
     {
       icon: Briefcase,
       title: "Business Development",
-      description: "Professional proposal preparation services that transform raw concepts into industry-ready, compelling submissions aligned with technical requirements and market expectations"
+      description: "Professional proposal preparation that transforms raw ideas into industry-ready submissions"
     },
     {
       icon: Zap,
