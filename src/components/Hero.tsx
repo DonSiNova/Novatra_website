@@ -64,7 +64,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-primary text-lg px-8"
+                className="border-white/80 text-white hover:bg-white hover:text-primary hover:border-white text-lg px-8 transition-all"
               >
                 Explore Solutions
               </Button>
