@@ -63,8 +63,8 @@ const Hero = () => {
             <Link to="/about">
               <Button 
                 size="lg" 
-                variant="outline" 
-                className="border-white/80 text-white hover:bg-white hover:text-primary hover:border-white text-lg px-8 transition-all"
+                variant="default"
+                className="bg-white text-primary hover:bg-white/90 text-lg px-8 transition-all"
               >
                 Explore Solutions
               </Button>
