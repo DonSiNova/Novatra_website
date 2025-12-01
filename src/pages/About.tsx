@@ -96,8 +96,28 @@ const About = () => {
         </div>
       </section>
 
+      {/* Our Team */}
+      <section className="py-24 bg-secondary/20">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center animate-fade-in">
+            <h2 className="text-4xl font-bold text-foreground mb-6">
+              Our Team
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed space-y-4">
+              Our team is composed of seasoned professionals who bring together the rigour of academic research
+              and the depth of real-world industry experience. This strong combination allows us to approach
+              complex challenges with both scientific precision and practical insight.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+              By uniting academic excellence with industry-driven thinking, we deliver solutions that are robust,
+              innovative, and strategically aligned with the needs of modern organisations.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Core Values */}
-      <section className="py-24 bg-background">
+       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
             <h2 className="text-4xl font-bold text-foreground mb-6">
