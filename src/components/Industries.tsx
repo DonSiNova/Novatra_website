@@ -6,9 +6,9 @@ const Industries = () => {
   const industries = [
     {
       image: healthcareImg,
-      title: "Healthcare",
-      description: "We deliver advanced predictive analytics, real-time quality monitoring, and comprehensive digital compliance solutions that empower healthcare organizations to enhance patient outcomes, optimize operational efficiency, and maintain stringent regulatory standards. Employing ML, DL, and AI integration for medical devices and pharmaceutical applications across all stages of development and deployment.",
-      features: ["ML & DL Integration", "Medical Devices", "Pharmaceutical AI"]
+      title: "Life Sciences",
+      description: "We deliver advanced predictive and descriptive analytics, real-time quality intelligence, and end-to-end digital compliance solutions that enable healthcare and life-science organizations to streamline operations, strengthen decision-making, and meet rigorous regulatory expectations. Our expertise spans AI-driven optimisation, medical-device data integration, and digital transformation across the full product and manufacturing lifecycle.",
+      features: ["Digital Transformation", "Medical Devices", "Pharmaceutical"]
     },
     {
       image: automotiveImg,
@@ -19,8 +19,8 @@ const Industries = () => {
     {
       image: energyImg,
       title: "Energy",
-      description: "We provide comprehensive predictive maintenance frameworks, energy efficiency optimization, and advanced reliability solutions that enable power generation and distribution companies to maximize uptime, reduce operational costs, minimize environmental impact, and ensure continuous, reliable delivery of energy across critical infrastructure networks.",
-      features: ["Predictive Maintenance", "Energy Efficiency", "System Reliability"]
+      description: "We provide comprehensive predictive maintenance frameworks, sustainability-driven optimisation, and advanced reliability solutions that help organisations operating across energy systems, industrial assets, and critical infrastructure to improve equipment performance, reduce operational costs, minimise environmental impact, and ensure stable, resilient operations at scale.",
+      features: ["Predictive Maintenance", "Sustainability & Optimisation", "System Reliability"]
     }
   ];
 

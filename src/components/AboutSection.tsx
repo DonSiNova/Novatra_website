@@ -1,4 +1,4 @@
-import { Brain, Workflow, LineChart, CloudCog, TrendingUp, Factory, Database, Cpu, Box, Activity, Zap, Wifi } from "lucide-react";
+import { Brain, Workflow, LineChart, CloudCog, TrendingUp, Factory, Database, Cpu, Box, Briefcase, Zap, Wifi } from "lucide-react";
 
 const AboutSection = () => {
   const capabilities = [
@@ -48,9 +48,9 @@ const AboutSection = () => {
       description: "Digital twins and optimization for manufacturing processes"
     },
     {
-      icon: Activity,
-      title: "Performance Monitoring",
-      description: "Continuous monitoring and optimization of industrial systems"
+      icon: Briefcase,
+      title: "Business Development",
+      description: "Professional proposal preparation services that transform raw concepts into industry-ready, compelling submissions aligned with technical requirements and market expectations"
     },
     {
       icon: Zap,
